@@ -32,6 +32,7 @@ public class Fraction
         }
         else
         {
+            //cause I'm too lazy to handle errors :)
             _bottom = 1;
         }
     }
@@ -52,8 +53,7 @@ public class Fraction
 
     public string GetFractionString()
     {
-        string text = $"{_top}/{_bottom}";
-        return text;
+        return $"{_top}/{_bottom}";
     }
 
     public double GetDecimalValue()

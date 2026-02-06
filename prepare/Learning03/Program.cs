@@ -17,29 +17,29 @@ class Program
         Console.WriteLine(f1.GetFractionString());
         Console.WriteLine(f1.GetDecimalValue());
 
-        //fraction 2
+        // fraction 2
         Console.WriteLine(f2.GetFractionString());
         Console.WriteLine(f2.GetDecimalValue());
 
-        //fraction 3
+        // fraction 3
         Console.WriteLine(f3.GetFractionString());
         Console.WriteLine(f3.GetDecimalValue());
 
-        //fraction 4
+        // fraction 4
         Console.WriteLine(f4.GetFractionString());
         Console.WriteLine(f4.GetDecimalValue());
 
         
-        //Random fractions
+        // Random fractions
         for (int i = 0; i < 20; i++)
         {
             int topValue = random.Next(1, 11);
             int bottomValue = random.Next(1, 11);
             f5.SetTop(topValue);
             f5.SetBottom(bottomValue);
-            Console.Write($"Fraction {i + 1}: ");
-            Console.Write($"string: {f5.GetFractionString()}");
-            Console.WriteLine($" Number: {f5.GetDecimalValue()}");
+            Console.Write($"Fraction {i + 1}. ");
+            Console.Write($"-String: {f5.GetFractionString()}");
+            Console.WriteLine($" -Number: {f5.GetDecimalValue()}");
         }
     }
 }
