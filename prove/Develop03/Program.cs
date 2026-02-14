@@ -19,10 +19,10 @@ class Program
                 break;
             }
 
-            Console.Write("\nPress Enter to continue or type 'quit': ");
+            Console.WriteLine("Press Enter to continue or type 'quit': ");
             string input = Console.ReadLine();
             
-            if (input.ToLower() == "quit"){ //I do not care enough to handle non quite answers
+            if (input.ToLower() == "quit"){ //I do not care enough to handle non quit answers
                 break;
             }
 
